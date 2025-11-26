@@ -15,8 +15,8 @@ if (!localStorage.getItem("key")) {
 
 if (!localStorage.getItem("model")) {
     localStorage.setItem("model", window.prompt("Введите название модели для генерации. По умолчанию, openai/gpt-oss-20b:free") || "openai/gpt-oss-20b:free")
+    window.location.reload()
 }
-
 
 const App = () => {
     const [content, setContent] = useState("")
